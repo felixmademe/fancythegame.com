@@ -1,0 +1,51 @@
+@import 'variables'
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans')
+
+*
+    transition-duration: 0.5s
+    &:hover
+        transition-duration: 0.3s
+
+body
+    font-family: 'Montserrat', Arial, sans-serif
+
+.number
+    font-family: 'Open Sans', Arial, sans-serif !important
+
+.btn
+    width: $btn-width
+    padding: 30px !important
+    border-radius: 0 !important
+    margin-top: 1em
+
+
+.btn:focus, .btn:active
+   outline: none !important
+   box-shadow: none
+
+.btn-color
+    background: $white
+    box-shadow: 0 0 0px #fff
+    -webkit-transition-duration: 0.5s
+    -webkit-transition-timing-function: easeInOutCubic
+    box-shadow: 0px 0 0 #fff  inset
+    border: $border-width solid $white
+
+.btn-inv-color
+    color: $white
+    border: $border-width solid $white
+    box-shadow: 0 0 0px #fff
+    -webkit-transition-duration: 0.5s
+    -webkit-transition-timing-function: easeInOutCubic
+    box-shadow: 0px 0 0 #fff  inset
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+    background: $dark !important
+
+#fp-nav ul li .fp-tooltip
+    color: $dark !important
+    top: -4px
+
+@media ( max-height: 650px )
+    .btn
+        padding: 20px !important
