@@ -36,26 +36,25 @@ body
     border-radius: 0 !important
     margin-top: 1em
 
-
 .btn:focus, .btn:active
    outline: none !important
    box-shadow: none
 
 .btn-color
     background: $white
-    box-shadow: 0 0 0px #fff
+    box-shadow: 0 0 0px $white
     -webkit-transition-duration: 0.5s
     -webkit-transition-timing-function: easeInOutCubic
-    box-shadow: 0px 0 0 #fff  inset
+    box-shadow: 0px 0 0 $white inset
     border: $border-width solid $white
 
 .btn-inv-color
     color: $white
     border: $border-width solid $white
-    box-shadow: 0 0 0px #fff
+    box-shadow: 0 0 0px $white
     -webkit-transition-duration: 0.5s
     -webkit-transition-timing-function: easeInOutCubic
-    box-shadow: 0px 0 0 #fff  inset
+    box-shadow: 0px 0 0 $white inset
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span
     background: $dark !important
@@ -78,21 +77,21 @@ body
         border: $border-width solid $why !important
         &:hover
             box-shadow: $btn-width 0 0 $why inset
-            color: $white
+            color: $white !important
 
     .btn-inv-color.how
         color: $how !important
         border: $border-width solid $how !important
         &:hover
             box-shadow: $btn-width 0 0 $how inset
-            color: $white
+            color: $white !important
 
     .btn-inv-color.game
         color: $game !important
         border: $border-width solid $game !important
         &:hover
             box-shadow: $btn-width 0 0 $game inset
-            color: $white
+            color: $white !important
 
     h1
         color: $dark
@@ -137,10 +136,10 @@ body
         margin: 5px
         cursor: pointer
         user-select: none
-        box-shadow: 0 0 0px #fff
+        box-shadow: 0 0 0px $white
         -webkit-transition-duration: 0.5s !important
         -webkit-transition-timing-function: easeInOutCubic !important
-        box-shadow: 0px 0 0 #fff  inset
+        box-shadow: 0px 0 0 $white inset
         input
             position: absolute
             opacity: 0
