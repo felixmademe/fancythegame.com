@@ -12,8 +12,6 @@ The design was made over a couple of iterations of sketches. After a copule of d
 
 ## Technologies
 
-Fancy the Game was created with a couple of different technologies. 
-
 Languages used:
 
 - Javascript
