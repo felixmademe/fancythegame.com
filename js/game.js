@@ -71,18 +71,15 @@ $( function() {
 	var i = 0;
 	$( 'input[name=' + group + ']' ).each( function()
 	{
-		i++;
 		switch( $(this).is( ':checked' ) )
 		{
 			case true:
 				$(this).parent().addClass( 'active' );
-				console.log( i + ' ' + $(this).is( ':checked' ) );
+				fullpage_api.moveSectionDown();
 				break;
 
 			case false:
-				console.log( i + ' ' + $(this).is( ':checked' ) );
 				$(this).parent().removeClass( 'active' );
-
 				break;
 			default:
 				console.log( 'Something went wrong' );
