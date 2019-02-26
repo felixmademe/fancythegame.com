@@ -1,6 +1,24 @@
-@import 'variables'
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans')
+//
+// Variables
+//
+$why: #6ab04c
+$how: #e056fd
+$game: #686de0
+$white: #fff
+$dark: #130f40
+$black: #000 !important
+$btn-width: 250px
+$border-width: 2px
+$question1: #f9ca24
+$question2: #f0932b
+$question3: #eb4d4b
+$question4: #6ab04c
+$question5: #be2edd
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
 
+//
+// Universal elements
+//
 *
     transition-duration: 0.5s
     &:hover
@@ -9,9 +27,9 @@
 body
     font-family: 'Montserrat', Arial, sans-serif
 
-.number
-    font-family: 'Open Sans', Arial, sans-serif !important
-
+//
+// Universal classes
+//
 .btn
     width: $btn-width
     padding: 30px !important
@@ -49,3 +67,222 @@ body
 @media ( max-height: 650px )
     .btn
         padding: 20px !important
+
+//
+// Index SASS
+//
+.section.hero
+    color: $black
+    .btn-inv-color.why
+        color: $why !important
+        border: $border-width solid $why !important
+        &:hover
+            box-shadow: $btn-width 0 0 $why inset
+            color: $white
+
+    .btn-inv-color.how
+        color: $how !important
+        border: $border-width solid $how !important
+        &:hover
+            box-shadow: $btn-width 0 0 $how inset
+            color: $white
+
+    .btn-inv-color.game
+        color: $game !important
+        border: $border-width solid $game !important
+        &:hover
+            box-shadow: $btn-width 0 0 $game inset
+            color: $white
+
+    h1
+        color: $dark
+        font-size: 3.5em
+
+.section.why
+    color: $white
+    .btn-color
+        color: $why
+        &:hover
+            box-shadow: $btn-width 0 0 $why inset
+            color: $white
+
+.section.how
+    color: $white
+    .btn-color
+        color: $how
+        &:hover
+            box-shadow: $btn-width 0 0 $how inset
+            color: $white
+
+.section.game
+    color: $white
+    .btn-color
+        color: $game
+        &:hover
+            box-shadow: $btn-width 0 0 $game inset
+            color: $white
+
+//
+// Game SASS
+//
+.radio-wrapper
+    max-width: 550px
+    margin: 1em auto !important
+    .radio-container
+        width: $btn-width  !important
+        border: $border-width solid $white
+        display: inline-block
+        position: relative
+        padding: 30px !important
+        margin: 5px
+        cursor: pointer
+        user-select: none
+        box-shadow: 0 0 0px #fff
+        -webkit-transition-duration: 0.5s !important
+        -webkit-transition-timing-function: easeInOutCubic !important
+        box-shadow: 0px 0 0 #fff  inset
+        input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+
+@media ( max-height: 650px )
+    .radio-wrapper
+        margin: 0.5em auto !important
+        .radio-container
+            margin: 5px auto !important
+            padding: 20px !important
+
+.section.start
+    h1
+        color: $dark !important
+    color: $black
+    .btn-inv-color
+        color: $dark !important
+        border: $border-width solid $dark !important
+        &:hover
+            box-shadow: $btn-width 0 0 $dark inset
+            color: $white !important
+
+.section.question1
+    color: $white !important
+    .btn-color
+        color: $question1
+        &:hover
+            box-shadow: $btn-width 0 0 $question1 inset
+            color: $white !important
+
+    .radio-wrapper
+        .radio-container
+            background-color: $question1
+            &:hover
+                box-shadow: $btn-width 0 0 $white inset
+                color: $question1 !important
+        .active
+            background-color: $white
+            color: $question1 !important
+
+
+.section.question2
+    color: $white !important
+    .btn-color
+        color: $question2
+        &:hover
+            box-shadow: $btn-width 0 0 $question2 inset
+            color: $white !important
+
+    .radio-wrapper
+        .radio-container
+            background-color: $question2
+            &:hover
+                box-shadow: $btn-width 0 0 $white inset
+                color: $question2 !important
+        .active
+            background-color: $white
+            color: $question2 !important
+
+.section.question3
+    color: $white !important
+    .btn-color
+        color: $question3
+        &:hover
+            box-shadow: $btn-width 0 0 $question3 inset
+            color: $white !important
+
+    .radio-wrapper
+        .radio-container
+            background-color: $question3
+            &:hover
+                box-shadow: $btn-width 0 0 $white inset
+                color: $question3 !important
+        .active
+            background-color: $white
+            color: $question3 !important
+
+.section.question4
+    color: $white !important
+    .btn-color
+        color: $question4
+        &:hover
+            box-shadow: $btn-width 0 0 $question4 inset
+            color: $white !important
+
+    .radio-wrapper
+        .radio-container
+            background-color: $question4
+            &:hover
+                box-shadow: $btn-width 0 0 $white inset
+                color: $question4 !important
+        .active
+            background-color: $white
+            color: $question4 !important
+
+.section.question5
+    color: $white !important
+    .btn-color
+        color: $question5
+        &:hover
+            box-shadow: $btn-width 0 0 $question5 inset
+            color: $white !important
+
+    .radio-wrapper
+        .radio-container
+            background-color: $question5
+            &:hover
+                box-shadow: $btn-width 0 0 $white inset
+                color: $question5 !important
+        .active
+            background-color: $white
+            color: $question5
+
+.section.result
+    text-align: center
+    color: $dark !important
+    .social
+        a
+            text-decoration: none !important
+            color: $dark !important
+        .facebook
+            &:hover
+                color: $game !important
+        .twitter
+            &:hover
+                color: $question4 !important
+        .instagram
+            &:hover
+                color: $question2 !important
+    .btn-inv-color
+        margin-bottom: 20px
+        color: $dark !important
+        border: $border-width solid $dark !important
+        &:hover
+            box-shadow: $btn-width 0 0 $dark inset
+            color: $white !important
+
+#fail
+    display: none
+
+#success
+    display: none
+    span
+        color: $question4 !important
