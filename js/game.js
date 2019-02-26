@@ -1,6 +1,4 @@
-$(document).on('touchmove', function(e) {
-	e.preventDefault();
-});
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 $( function() {
     new fullpage('#gameFullpage',
@@ -134,6 +132,6 @@ $( 'form' ).on( 'submit', function( e )
 		$( '#success' ).html
 		( 'I am a <span>' + gender + '</span><br> and I like to <span>' + hobby +
 		  '</span>.<br>My favorite person is <span>' + person + '</span><br> and can you be my <span>' +
-	   	  my + '</span>.<br> I promise you, the answer is always <span>' + answer + '</span>' );
+	   	  my + '</span>.<br> I promise you, the answer is always <span>' + answer + '</span>.' );
 	}
 } );
