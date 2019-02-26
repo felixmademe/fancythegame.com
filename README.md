@@ -10,7 +10,7 @@ Truly a minimalistic website with a small question game.
 
 The design was made over a couple of iterations of sketches. After a copule of designs the most simple and the one that required the least amount of clicks was choosen. Do not be mistaken for the minimalist design as a lazy way to create, it took quite some time to create the look and feel. 
 
-##Technologies
+## Technologies
 
 Fancy the Game was created with a couple of different technologies. 
 
