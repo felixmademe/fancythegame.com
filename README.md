@@ -22,6 +22,7 @@ Frameworks/libraries used:
 
 - Fullpage.js (with extensions) 3.0.4
 - jQuery 3.3.1
+- SASS
 - Bootstrap 4.3.1
 - Font Awesome 5.7.2
 - AOS Animations
