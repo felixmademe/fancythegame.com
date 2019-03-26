@@ -15,7 +15,7 @@ $( function() {
     	//Scrolling
     	css3: true,
     	scrollingSpeed: 1200,
-    	autoScrolling: true,
+    	autoScrolling: false,
     	fitToSection: true,
     	fitToSectionDelay: 1000,
     	scrollBar: true,

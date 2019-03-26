@@ -11,7 +11,7 @@ $( function() {
     	//Scrolling
     	css3: true,
     	scrollingSpeed: 1200,
-    	autoScrolling: true,
+    	autoScrolling: false,
     	fitToSection: true,
     	fitToSectionDelay: 1000,
     	scrollBar: true,
@@ -42,15 +42,6 @@ $( function() {
     	slideSelector: '.slide',
 
     	lazyLoading: true,
-
-    	//events
-    	onLeave: function(origin, destination, direction){},
-    	afterLoad: function(origin, destination, direction){},
-    	afterRender: function(){},
-    	afterResize: function(width, height){},
-    	afterResponsive: function(isResponsive){},
-    	afterSlideLoad: function(section, origin, destination, direction){},
-    	onSlideLeave: function(section, origin, destination, direction){}
     });
 });
 
@@ -68,7 +59,7 @@ $( function() {
 	let input = $(this);
 	let group = input.attr( 'name' );
 
-	var i = 0;
+	let i = 0;
 	$( 'input[name=' + group + ']' ).each( function()
 	{
 		switch( $(this).is( ':checked' ) )
@@ -90,12 +81,12 @@ $( function() {
 
 $( 'form' ).on( 'submit', function( e )
 {
+    e.preventDefault();
 	e.stopPropagation();
-	e.preventDefault();
 	let form = $(this);
 	$( '#fail' ).text("");
 
-	var radio_groups = {}
+	let radio_groups = {}
 	$(":radio").each( function ()
 	{
 	    radio_groups[ this.name ] = true;
@@ -103,9 +94,9 @@ $( 'form' ).on( 'submit', function( e )
 
 	console.log(radio_groups);
 
-	i = 0;
-	j = 0;
-	for( group in radio_groups)
+	let i = 0;
+	let j = 0;
+	for( let group in radio_groups )
 	{
 		i++;
 		var checked = $('input[name="' + group + '"]:checked').length;
