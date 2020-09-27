@@ -105,7 +105,7 @@ $( 'form' ).on( 'submit', function( e )
 			var input = form.find( $('input[name="' + group + '"]').first() );
 			var wrapper = input.parent().parent();
 			$( '#fail' ).fadeIn( 'slow' );
-			$( '#fail' ).append( "Question" + i + ": no option selected <br>");
+			$( '#fail' ).append( "Question " + i + ": no option selected <br>");
 			$( 'button[type="submit"]' ).text( 'Try again' );
 			j++;
 		}
